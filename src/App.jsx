@@ -18,25 +18,25 @@ const App = () => {
   const [chatList, setChatList] = useState([
     {
       chatId: 1,
-      chatName: "Shereka",
+      chatName: "User 1",
       chatImage:
         "https://ovicio.com.br/wp-content/uploads/2022/12/20221208-fjedp5lwiaacwbx-555x555.jpeg",
     },
     {
       chatId: 2,
-      chatName: "Agiota",
+      chatName: "User 2",
       chatImage:
         "https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg",
     },
     {
       chatId: 3,
-      chatName: "Sla",
+      chatName: "User 3",
       chatImage:
         "https://ftw.usatoday.com/wp-content/uploads/sites/90/2017/05/spongebob.jpg?w=1000&h=600&crop=1",
     },
     {
       chatId: 4,
-      chatName: "Sua mãe",
+      chatName: "User 4",
       chatImage:
         "https://psicologafabiola.com.br/wp-content/uploads/2017/06/jogo-da-baleia-azul-1200x677.jpg",
     },
