@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary-color: #d2dbdc;
+  --secondary-color: #ededed;
+  --button-hover-color: #ddd;
+  --button-active-color: #ccc;
+  --scrollbar-color: #e0e0e0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: var(--primary-color);
+  font-family: "Segoe UI", Helvetica Neue, Helvetica, Lucia Grande, Arial;
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.appWindow {
+  display: flex;
+  height: 100vh;
+  background-color: var(--secondary-color);
+}
+
+.sidebar {
+  height: 100%;
+  width: 35%;
+  max-width: 25rem;
   display: flex;
   flex-direction: column;
+  border-right: 1px solid #ddd;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 0.625rem 1rem;
+}
+
+.headerAvatar {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: filter 0.1s ease-in-out;
+  object-fit: cover;
+}
+
+.headerAvatar:hover {
+  filter: brightness(0.9);
+}
+
+.headerButtons {
+  display: flex;
+}
+
+.contentArea {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerBtn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.headerBtn:hover {
+  background-color: var(--button-hover-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headerBtn:active {
+  background-color: var(--button-active-color);
+}
+
+.search {
+  border-bottom: 1px solid #eee;
+  background-color: #f6f6f6;
+  padding: 0.35rem 1rem;
+}
+
+.searchInput {
+  background-color: #fff;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.625rem;
+}
+
+.searchInput Input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-left: 0.625rem;
+}
+
+.chatList {
+  background-color: white;
+  overflow-y: auto;
+  flex: 1;
+  padding-top: 0.5rem;
+}
+
+.chatList::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 0.25rem;
+}
+
+.chatList::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+  border-radius: 0.1875rem;
 }

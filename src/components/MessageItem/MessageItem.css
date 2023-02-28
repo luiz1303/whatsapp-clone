@@ -1,0 +1,31 @@
+.msgLineContainer {
+  margin-bottom: 0.625rem;
+  display: flex;
+}
+
+.msgItem {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 0.4rem;
+  border-radius: 0.625rem;
+  background-color: #f5f5f5;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  max-width: 70%;
+  max-height: fit-content;
+}
+
+.msgText {
+  margin: 5px 40px 5px 5px;
+}
+
+.msgDate {
+  font-size: 0.75rem;
+  color: #999;
+  text-align: right;
+  margin-top: -15px;
+}
+
+.msgViewStatus {
+}
